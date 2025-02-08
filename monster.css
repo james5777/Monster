@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --font-style: "Archivo", serif;
+    --color-green: #8fc03b;
+    --color-blue: #79deff;
+    --color-yellow: #ffde00;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white
+    
+}
+
+body.blue{
+    background-color: var(--color-blue);
+    color: black;
+    transition: 600ms ease-in-out;
+}
+
+body.yellow{
+    background-color: var(--color-yellow);
+    color: black;
+    transition: 600ms ease-in-out;
+}
+
+body.green{
+    background-color: var(--color-green);
+    transition: 600ms ease-in-out;
+}
+
+
+/* HEADER */
+
+header{
+    height: 100px;
+    background-color: black;
+    display: flex;
+}
+
+.logo{
+    height: 150px;
+    
+}
+.header_nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.header_nav a{
+    color: white;
+    font-weight: 700;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ .bottom img{
+    height: 100%;
+    margin-left: -2%;
+    margin-right: -2%; 
+
+} 
+
+.nav_list a{
+    font-family: var(--font-style);
+    transition: 400ms ease-in-out;
+}
+
+.nav_list a:hover{
+    color: var(--color-green);
+}
+
+/* SECTION */
+
+section{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 4fr 1fr;
+}
+
+.info h2{
+    font-size: 5rem;
+    font-family: var(--font-style);
+    font-weight:900;
+}
+
+.info p{
+    font-size: 1.5rem;
+    font-family: var(--font-style);
+    font-weight: 600;
+}
+
+.myButton {
+	background-color: var(--color-green);
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: var(--font-style);
+	font-size:17px;
+    font-weight: 700;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin-top: 20px;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.imagen.green{
+    height: 100%;
+    background-image: url(lata_1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 600ms ease-in-out;
+    
+
+}
+
+.imagen.blue{
+    height: 100%;
+    background-image: url(lata_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 600ms ease-in-out;
+}
+
+.imagen.yellow{
+    height: 100%;
+    background-image: url(lata_3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 600ms ease-in-out;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.instagram{
+    height: 50px;
+    width: 50px;
+    background-image: url(instagram-logo-blanco.png);
+    background-size: contain;
+    transition: 600ms ease-in-out;
+}   
+
+.instagram.negro{
+    background-image: url(instagram-logo-negro.png);
+    transition: 600ms ease-in-out;
+}
+
+.facebook{
+    height: 50px;
+    width: 50px;
+    background-image: url(facebook-logo-blanco.png);
+    background-size: contain;
+    transition: 600ms ease-in-out;
+}   
+
+.facebook.negro{
+    background-image: url(facebook-logo-negro.png);
+    transition: 600ms ease-in-out;
+    
+}
+
+.tiktok{
+    height: 50px;
+    width: 50px;
+    background-image: url(tiktok-logo-blanco.png);
+    background-size: contain;
+    transition: 600ms ease-in-out;
+}   
+
+.tiktok.negro{
+    background-image: url(tiktok-logo-negro.png);
+    transition: 600ms ease-in-out;
+}
+
+/* BOTTOM */
+
+.bottom{
+    height: 13%;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    gap: 1%;
+    margin: auto;
+}
+
+.producto_1, .producto_2, .producto_3{
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.producto_1:hover, .producto_2:hover, .producto_3:hover{
+    transform: translateY(-25px);
+}
